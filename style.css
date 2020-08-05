@@ -109,7 +109,7 @@ and (max-device-width : 480px) {
     order:2;
   }
   .second p{
-    font-size: 16px;
+    font-size: 20px;
   }
   .main_about_row figure{
     position: relative;
