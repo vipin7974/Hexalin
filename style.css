@@ -78,7 +78,27 @@
 .span_text{
   color: #007BFF;
 }
-
+#img_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:25%;
+}
+.dir_section{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin-top: -16px;
+  padding-top: 50px;
+  color: white;
+  padding-bottom: 50px;
+}
+.avtar_img{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
 
   /*media query*/
