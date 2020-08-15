@@ -1,0 +1,166 @@
+/*media query*/
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen
+  and (min-device-width : 240px)
+  and (max-device-width : 480px) {
+    .hero_text h1{
+      font-size: 20px;
+    }
+    .quote{
+      display: none;
+    }
+    .hero_text{
+      top:-5%; 
+    }
+    .hero_text p{
+      font-size: 5px;
+    }
+    .hero_text h5{
+      font-size: 8px;
+    }
+    .hero_text .Read_btn{
+      margin-top: -10px;
+      width: 80px;
+      height: 30px;
+      font-size: 10px;
+    }
+    .hero_text .read{
+      display: flex;
+      align-self: center;
+      justify-self: center;
+    }
+    .first{
+      order:1;
+    }
+    .second{
+      order:2;
+    }
+    .second p{
+      font-size: 10px;
+    }
+    .main_about_row figure{
+      position: relative;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+  }
+  .main_title h1{
+    font-size: 20px;
+  }
+  #wel_para{
+    order: 2;
+  }
+  #wel_img{
+    order:1;
+  }
+  .wel1{
+    display: none;
+  }
+  }
+  
+  @media only screen
+  and (min-device-width : 480px)
+  and (max-device-width : 520px){
+    .hero_text{
+      top:-10%; 
+    }
+    
+    .hero_text h1{
+      font-size: 30px;
+    }
+  
+  .hero_text p{
+    font-size: 5px;
+  }
+  .hero_text h5{
+    font-size: 10px;
+  }
+  .hero_text .Read_btn{
+    margin-top: -10px;
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .first{
+    order:1;
+  }
+  .second{
+    order:2;
+  }
+  .main_about_row figure{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+  #wel_para{
+    order: 2;
+  }
+  #wel_img{
+    order:1;
+  }
+  .wel1{
+    display: none;
+  }
+  }
+  
+  
+  @media only screen
+  and (min-device-width : 517px)
+  and (max-device-width : 700px) {
+    .hero_text{
+      top:0%; 
+    }
+    
+    .hero_text h1{
+      font-size: 30px;
+    }
+  
+  .hero_text p{
+    font-size: 5px;
+  }
+  .hero_text h5{
+    font-size: 10px;
+  }
+  
+  .first{
+    order:1;
+  }
+  .second{
+    order:2;
+  }
+  .main_about_row figure{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+  .wel1{
+    display: none;
+  }
+  #wel_para{
+    order: 2;
+  }
+  #wel_img{
+    order:1;
+  }
+  }
+  
+  @media only screen
+  and (min-device-width : 701px)
+  and (max-device-width : 1224px){
+    .wel2{
+      display: none;
+    }
+  }
+  
+  @media only screen
+  and (min-width : 1224px) {
+    .hero_text .Read_btn{
+      margin-top: 60px;
+    }
+    .wel2{
+      display: none;
+    }
+  }

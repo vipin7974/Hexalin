@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/css/bootstrap.min.css">
 
   <!--  font awesome icons  -->
-  
+  <link rel="stylesheet" href="src/css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
   <title>HEXALIN PHARMACEUTICALS</title>
 </head>
 
@@ -24,27 +25,34 @@
     <div class="container-fluid mx-auto">
         <div class="row">
             <div class="col-md-10 col-12 mx-auto">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#"><img src="images/Hxlogo.png" width="80px" height="80px"></a>
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="50rem" height="50rem"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        aria-expanded="false" aria-label="Toggle navigation"><img src="images/menu.png" height="30px" width="30px">
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item">
+                              <i class="fa fa-home" aria-hidden="true" style="color:black;"></i>
+                                <a class="nav-link" href="index.html" style="color:black;">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about_main">About</a>
+                              <i class="fa fa-book" aria-hidden="true" ></i>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
+                              <i class="fa fa-heartbeat" aria-hidden="true"></i>
                                 <a class="nav-link" href="#services_id">Products</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact_id">Contact</a>
+                              <i class="fa fa-users" aria-hidden="true"></i>
+                              <a class="nav-link" href="#contact_id">Managment Profile</a>
+                          </li>
+                            <li class="nav-item">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -70,9 +78,9 @@
         <div class="container-fluid  text-uppercase">
           <h1>HEXALIN PHARMACEUTICALS</h1>
           <p>PVT. Limited</p>
-          <h5>A culture of caring.</h5>
-          <div class="Read_btn my-3">
-            <a href="#about_main"><button class="btn btn-primary ">Read More</button></a>
+          <h5 class="quote">A culture of caring.</h5>
+          <div class="read my-3">
+            <a href="#about_main"><button class="btn Read_btn">Read More</button></a>
           </div>
         </div>
       </div>
@@ -95,109 +103,193 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  </div>
   <!--Carousel section end-->
 
-  <!--About section start-->
+ <!--welcome sectiopn start-->
 
-  <div class="container-fluid my-5 mx-auto about_main" id="about_main">
+  <div class="container-fluid mx-auto welcome_section my-5" data-aos="fade-up">
     <div class="row">
       <div class="col-md-10 col-11 mx-auto">
-        <div class="main_title my-5">
-          <h1>About Me</h1>
+        <div class="main_title">
+          <h1><span class="text1">Wel</span><span class="span_text">come</span></h1>
       </div>
-        <div class="row main_about_row my-5">
-          <div class="col-md-6 col-10 mx-auto first">
+        <div class="row welcome_row">
+          <div class="col-md-6 col-12 wel_col_text" id="wel_para">
+            <div class="main_text">
+              <p>It gives me immense pleasure to welcome you to our company <span class="span_text text-uppercase">HEXALIN pharmaceuticals</span>, today we are progressing in the right path of development for the elevation of the human spirit to lead a healthy life. We are on mission to bring to our clients the best quality pharmaceuticals products.
+                we have pledge to keep going, building even stronger company so we may reach out to many more people and places where we can extend our cooperation in supplying quality medicines at reasonable prices. Please visit to website for more information about us and we are always ready to help you so, please feel free to contact us. </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 d-flex align-items-end justify-content-end" id="wel_img">
             <figure>
-              <img src="images/animesh.png" class="img-fluid">
+              <img src="images/wel.png" class="img-fluid wel1">
+              <img src="images/wel2.jpg" class="img-fluid wel2">
             </figure>
           </div>
-          <div class="col-md-6 col-10 mx-auto  second">
-            <p>
-              <spna class="span_text">HEXALIN PHARMACEUTICALS</spna> is a specialty pharmaceutical company engaged in development, manufacturing and marketing of quality finished dosages. Committed to 'Serve Health Care Needs', we produce a comprehensive range of specialty products targeting different therapeutic segments for treatment of patients, customised to each market we are present in. We clearly understand our customer’s needs and use cutting edge technology to present innovative solutions. Our business includes Branded Generics in emerging markets of Chhattisgarh, Mumbai & Bangalore.
-            </p>
-          </div>
-          </div>
-          <div class="row main_about_row my-5">
-            <div class="col-md-6 col-10 mx-auto second">
-              <p>
-                <spna class="span_text">HEXALIN PHARMACEUTICALS</spna> is a specialty pharmaceutical company engaged in development, manufacturing and marketing of quality finished dosages. Committed to 'Serve Health Care Needs', we produce a comprehensive range of specialty products targeting different therapeutic segments for treatment of patients, customised to each market we are present in. We clearly understand our customer’s needs and use cutting edge technology to present innovative solutions. Our business includes Branded Generics in emerging markets of Chhattisgarh, Mumbai & Bangalore.
-              </p>
-            </div>
-            <div class="col-md-6 col-10 first mx-auto">
-              <figure>
-                <img src="images/entrepreneur-593358_1920.jpg" class="img-fluid">
-              </figure>
-            </div>
-            </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--About section end-->
 
-  <!---Images section-->
-  <div id="carousel2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-    <div class="carousel-inner">
-      <div class="carousel-caption" id="img_text">
-        <h1>A culture of caring.</h1>
-      </div>
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="images/sss1.png" alt="First slide" > 
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="images/ssssss.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="images/sssss2.png" alt="Second slide">
-      </div>
-    </div>
   </div>
-  <!---Images section-->
-  <!--Directors section start-->
-  <div class="container-fluid mx-auto dir_section">
+
+  <!--welcome sectiopn end-->
+
+  <!--we provide start-->
+
+  <div class="container-fluid mx-auto provide_section my-5" data-aos="flip-down">
     <div class="row">
-      <div class="col-md-10 col-10 mx-auto">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-md-6 col-10 d-flex align-items-center justify-content-center flex-column">
-           
-            <figure>
-              <img class="imf-fluid avtar_img" src="images/animesh.png">
-            </figure>
-            <h5>Director</h5>
-            <h6>Animesh Nandan shahye</h6>
-            <p>"Our industry has massively shot itself in the foot.”</p>
-    
+      <div class="col-md-10 col-11 mx-auto">
+        <div class="main_title my-3">
+          <h1><span class="span_text">We</span><span class="text1">provide</span></h1>
+      </div>
+      <div class="row we_pro_row d-flex justify-content-center align-items-center mx-auto">
+        <div class="col-md-4 col-11">
+          <div class="card box" >
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-cube" aria-hidden="true"></i>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Modern Packaging</h6>
+              <p class="card-text">All our medicine is provided with modern and durable packaging.</p>
+            </div>
           </div>
-          <div class="col-md-6 col-10  d-flex align-items-center justify-content-center  flex-column">
-            <figure class="">
-              <img class="imf-fluid avtar_img" src="images/animesh.png">
-            </figure>
-            <h5>Director</h5>
-            <h6>Animesh Nandan shahye</h6>
-            <p>"Our industry has massively shot itself in the foot.”</p>
+        </div>
+        <div class="col-md-4 col-11">
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-flask" aria-hidden="true"></i></h5>
+              <h6 class="card-subtitle mb-2 text-muted">New Technologies</h6>
+              <p class="card-text">We use new and innovative technologies in our work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-11">
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-medkit" aria-hidden="true"></i>
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Unique Approach</h6>
+              <p class="card-text">Our approach combines dedication and professionalism.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-   <!--Directors section start-->
+      </div>
+      </div>
+      </div>
 
-   <!--our team section start-->
 
-    <div class="container-fluid mx-auto">
+   <!--we provide end-->
 
-    </div>
+    <!--Footer start-->
 
-    <!--our team section start-->
+    <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>1010 Avenue, sw 54321, chandigarh</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span>9876543210 0</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span>mail@info.com</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-1 pb-1">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="images/logo.jpg" class="img-fluid" alt="logo"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="#">Our products</a></li>
+                              <li><a href="#">Our members</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Subscribe</h3>
+                          </div>
+                          <div class="footer-text">
+                              <p>Don’t hesitate to message us.</p>
+                          </div>
+                          <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="text" placeholder="Email Address">
+                                  <button><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/">HEXALIN PHARMACEUTICALS</a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 
+  <!---footer end-->
 
 
 
   <!--  Jquery js file  -->
-  <script src="css/js/jquery.3.5.0.js"></script>
+  <script src="src/js/jquery.3.5.0.js"></script>
 
   <!--  Bootstrap js file  -->
-  <script src="css/js/bootstrap.bundle.js"></script>
+  <script src="src/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
