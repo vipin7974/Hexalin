@@ -29,19 +29,19 @@
   -moz-animation-name: bounce;
 }
 
-.page {
+.syrup .page {
     color: #222;
     text-align: center;
   }
  
   
-  .box-faces {
+ .box-faces {
     position: relative;
     width: 100px;
     transform-style: preserve-3d;
   }
   
-  .box-face {
+ .box-face {
     position: absolute;
     box-shadow: inset 0px 0px 100px #555;
   }
@@ -50,22 +50,22 @@
     transform: translateZ(-50px) rotateY(180deg);
     background-color: #eee;
   }
-  .box-face--is-right {
+ .box-face--is-right {
     transform: rotateY(-270deg) translateX(50px);
     transform-origin: top right;
     background-color: #ddd;
   }
-  .box-face--is-left {
+   .box-face--is-left {
     transform: rotateY(270deg) translateX(-50px);
     transform-origin: center left;
     background-color: #ddd;
   }
-  .box-face--is-top {
+ .box-face--is-top {
     transform: rotateX(-90deg) translateY(-50px);
     transform-origin: top center;
     background-color: #fafafa;
   }
-  .box-face--is-bottom {
+   .box-face--is-bottom {
     transform: rotateX(90deg) translateY(50px);
     transform-origin: bottom center;
     background-color: #bbb;
@@ -93,3 +93,52 @@
       padding-bottom: 50px;
       padding-top:50px;
   }
+
+  .tablet_section{
+    border-top:1px solid pink;
+  }
+  .tablet_section .page {
+    color: #222;
+    text-align: center;
+  }
+ 
+  
+  .tablet_section .box-faces {
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  
+  .tablet_section .box-face {
+    position: absolute;
+   
+  }
+  
+  .tablet_section .box-face--is-back {
+    transform: translateZ(-50px) rotateY(180deg);
+    background-color: #eee;
+  }
+  .tablet_section .box-face--is-right {
+    transform: rotateY(-270deg) translateX(50px);
+    transform-origin: top right;
+    background-color: #ddd;
+  }
+  .tablet_section .box-face--is-left {
+    transform: rotateY(270deg) translateX(-50px);
+    transform-origin: center left;
+    background-color: #ddd;
+  }
+  .tablet_section .box-face--is-top {
+    transform: rotateX(-90deg) translateY(-50px);
+    transform-origin: top center;
+    background-color: #fafafa;
+  }
+  .tablet_section .box-face--is-bottom {
+    transform: rotateX(90deg) translateY(50px);
+    transform-origin: bottom center;
+    background-color: #bbb;
+  }
+  .tablet_section .box-face--is-front {
+    transform: translateZ(100px);
+    background-color: #eee;
+  }
+ 
