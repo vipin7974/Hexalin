@@ -203,9 +203,16 @@ font-size: 30px;
 float: left;
 margin-top: 8px;
 }
+.single-cta a{
+  text-decoration: none;
+  color:white;
+}
 .cta-text {
 padding-left: 15px;
 display: inline-block;
+}
+.cta-text span{
+  cursor: pointer;
 }
 .cta-text h4 {
 color: #fff;
