@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $msg=$_POST['message'];
     $to='viprock234@gmail.com';
     $subject="Feedback from site";
-    $message="Name: ".$name."\n";."phone:".$mobile."\n"."message: "."\n\n".$msg;
+    $message="Name: ".$name."\n"."phone:".$mobile."\n"."message: "."\n\n".$msg;
     $headers="From: ".$email;
 
     if(mail($to,$subject,$message,$headers)){
