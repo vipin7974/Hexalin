@@ -6,6 +6,13 @@
     border:none;
     border-bottom: 2px solid #678AC9;
 }
+.contact_section .form_main label{
+    opacity: 0.5;
+}
+.contact_section .form_main i{
+    font-size:20px;
+    color:#DD5E87;
+}
 .contact_section .form_main textarea{
     border-color: #678AC9;
 }
