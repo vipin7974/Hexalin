@@ -1,0 +1,95 @@
+.products_section{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid pink;
+}
+.products_section .box{
+    border-radius: 10px;
+    border:none;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.products_section .box:hover{
+    cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.page {
+    color: #222;
+    text-align: center;
+  }
+ 
+  
+  .box-faces {
+    position: relative;
+    width: 100px;
+    transform-style: preserve-3d;
+  }
+  
+  .box-face {
+    position: absolute;
+    box-shadow: inset 0px 0px 100px #555;
+  }
+  
+  .box-face--is-back {
+    transform: translateZ(-50px) rotateY(180deg);
+    background-color: #eee;
+  }
+  .box-face--is-right {
+    transform: rotateY(-270deg) translateX(50px);
+    transform-origin: top right;
+    background-color: #ddd;
+  }
+  .box-face--is-left {
+    transform: rotateY(270deg) translateX(-50px);
+    transform-origin: center left;
+    background-color: #ddd;
+  }
+  .box-face--is-top {
+    transform: rotateX(-90deg) translateY(-50px);
+    transform-origin: top center;
+    background-color: #fafafa;
+  }
+  .box-face--is-bottom {
+    transform: rotateX(90deg) translateY(50px);
+    transform-origin: bottom center;
+    background-color: #bbb;
+  }
+  .box-face--is-front {
+    transform: translateZ(50px);
+    background-color: #eee;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .box-faces{
+    animation: spin 15s infinite linear;
+  }
+
+  .img_sec{
+      margin-bottom:200px;
+      padding-bottom: 50px;
+      padding-top:50px;
+  }
