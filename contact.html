@@ -15,11 +15,14 @@
     <link rel="stylesheet" href="src/css/responsive.css">
 
     <title>HEXALIN PHARMACEUTICALS</title>
-
-    
 </head>
 
 <body>
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted){window.location.href = '/';}"></iframe> 
    <!--navbar started-->
   <header class="nav_style">
     <div class="container-fluid mx-auto">
@@ -75,23 +78,23 @@
                     <div class="col-md-4 col-11">
                         <h4 class="mt-5 mb-5"><span class="text1">Get in </span><span class="span_text">touch</span></h4>
                         <div class="form_main">
-                            <form name="submit-to-google-sheet" method="post">
+                            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfMzEkEc0KVHjCXCzpgLwoJHVn25XuS963ly2IGo-_30fzNg/formResponse" method="post" target="hidden_iframe" id=myForm>
                                 <div class="form-group mb-5">
                                     <label for="name"><i class="fa fa-user-o" aria-hidden="true" required></i>&emsp;Name</label>
-                                  <input type="text" name="Name" class="form-control">
+                                  <input type="text" name="entry.754438959" class="form-control">
                                 </div>
                                 <div class="form-group  mb-5">
                                     <label for="mobile"><i class="fa fa-mobile" aria-hidden="true"></i>&emsp;Mobile</label>
-                                    <input type="tel" pattern=".{10}" class="form-control" name="Mobile" required>
+                                    <input type="tel" pattern=".{10}" class="form-control" name="entry.402005876" required>
                                   </div>
                                   <div class="form-group  mb-5">
                                     <label for="name"><i class="fa fa-envelope-o" aria-hidden="true"></i>&emsp;Email</label>
-                                    <input type="email" class="form-control" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
+                                    <input type="email" class="form-control" name="entry.705498912" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
                                   </div>
                                 <div class="form-group  mb-5">
-                                  <textarea class="form-control"  rows="3" placeholder=" Message" name="Message" required></textarea>
+                                  <textarea class="form-control"  rows="3" placeholder=" Message" name="entry.136007448" required></textarea>
                                 </div>
-                                <button type="submit" class="btn submit_btn">Submit</button>
+                                <button type="submit" class="btn submit_btn" onsubmit="myFunction()">Submit</button>
                               </form>
                             </div>
                     </div>
@@ -237,18 +240,6 @@
 <!---footer end-->
 
 
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZhsbQHuLpw48bncxSg7t6O7Toisb0pPtY5EQ_3ENekx7DMfEJ/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert('<p style="color:green">Success!</>'))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
      <!--  Jquery js file  -->
      <script src="src/js/jquery.3.5.0.js"></script>
