@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="src/css/responsive.css">
 
     <title>HEXALIN PHARMACEUTICALS</title>
+
+    
 </head>
 
 <body>
@@ -73,21 +75,21 @@
                     <div class="col-md-4 col-11">
                         <h4 class="mt-5 mb-5"><span class="text1">Get in </span><span class="span_text">touch</span></h4>
                         <div class="form_main">
-                            <form action="mailto:viprock234@gmail.com?subject='Contact Me'" method="post" target="_top" data-rel="external" enctype="text/plain" onSubmit="window.location.reload()">
+                            <form name="submit-to-google-sheet" method="post">
                                 <div class="form-group mb-5">
                                     <label for="name"><i class="fa fa-user-o" aria-hidden="true" required></i>&emsp;Name</label>
                                   <input type="text" name="Name" class="form-control">
                                 </div>
                                 <div class="form-group  mb-5">
                                     <label for="mobile"><i class="fa fa-mobile" aria-hidden="true"></i>&emsp;Mobile</label>
-                                    <input type="number" class="form-control" name="Mobile" required>
+                                    <input type="tel" pattern=".{10}" class="form-control" name="Mobile" required>
                                   </div>
                                   <div class="form-group  mb-5">
                                     <label for="name"><i class="fa fa-envelope-o" aria-hidden="true"></i>&emsp;Email</label>
-                                    <input type="email" class="form-control" name="Email" required> 
+                                    <input type="email" class="form-control" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
                                   </div>
                                 <div class="form-group  mb-5">
-                                  <textarea class="form-control"  rows="3" placeholder=" Message" required></textarea>
+                                  <textarea class="form-control"  rows="3" placeholder=" Message" name="Message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn submit_btn">Submit</button>
                               </form>
@@ -233,6 +235,20 @@
 </footer>
 
 <!---footer end-->
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZhsbQHuLpw48bncxSg7t6O7Toisb0pPtY5EQ_3ENekx7DMfEJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert('<p style="color:green">Success!</>'))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
      <!--  Jquery js file  -->
      <script src="src/js/jquery.3.5.0.js"></script>
