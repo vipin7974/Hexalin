@@ -4,11 +4,20 @@
   @media only screen
   and (min-device-width : 240px)
   and (max-device-width : 480px) {
+    
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
     .hero_text h1{
       font-size: 20px;
     }
-    .quote{
-      display: none;
+    .hero_text .pvt_text{
+      margin-left: -105px;
+
     }
     .hero_text{
       top:-5%; 
@@ -19,17 +28,7 @@
     .hero_text h5{
       font-size: 8px;
     }
-    .hero_text .Read_btn{
-      margin-top: -10px;
-      width: 80px;
-      height: 30px;
-      font-size: 10px;
-    }
-    .hero_text .read{
-      display: flex;
-      align-self: center;
-      justify-self: center;
-    }
+  
     .first{
       order:1;
     }
@@ -57,11 +56,28 @@
   .wel1{
     display: none;
   }
+  .single-cta  .mail{
+    font-size: 13px;
+  }
+  .d_img{
+    order:1;
+  }
+  .d_text{
+    order:2;
+  }
   }
   
   @media only screen
   and (min-device-width : 480px)
   and (max-device-width : 520px){
+
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
     .hero_text{
       top:-10%; 
     }
@@ -103,12 +119,22 @@
   .wel1{
     display: none;
   }
+  .single-cta  .mail{
+    font-size: 13px;
+  }
   }
   
   
   @media only screen
   and (min-device-width : 517px)
   and (max-device-width : 700px) {
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
     .hero_text{
       top:0%; 
     }
@@ -145,13 +171,26 @@
   #wel_img{
     order:1;
   }
+  .single-cta  .mail{
+    font-size: 10px;
+  }
   }
   
   @media only screen
   and (min-device-width : 701px)
   and (max-device-width : 1224px){
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
     .wel2{
       display: none;
+    }
+    .single-cta  .mail{
+      font-size: 10px;
     }
   }
   
@@ -164,3 +203,29 @@
       display: none;
     }
   }
+  @media only screen
+  and (min-device-width : 800px)
+  and (max-device-width : 1279px){
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
+    .single-cta  .mail{
+      font-size: 10px;
+    }
+  }
+
+  @media only screen
+  and (min-width : 1024px) {
+    .navbar-nav .nav-item{
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar-nav .nav-item i{
+      padding-right: 20px;
+    }
+  }
+  

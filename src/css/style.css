@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arvo', serif;
     scroll-behavior: smooth;
 }
 
@@ -158,15 +157,14 @@
   .navbar-nav .nav-item .nav-link:hover{
     color: black;
   }
-   #active{
-    color:red;
-
-  }
+ 
 
   .navbar-light .navbar-toggler{
     border:none;
   }
-
+  .quote{
+    color:#678AC9;
+  }
   .hero_text{
     text-align: start;
     color:black;
@@ -179,16 +177,6 @@
     font-weight: 1000;
     width: 40%;
     color:#E15D85;
-  }
-  .hero_text .Read_btn{
-    background-color: none;
-    border: 2px solid #DD5E87;
-    transition: all 0.2s linear;
-  }
-  .hero_text .Read_btn:hover{
-   background:linear-gradient(to right,#DD5E87,#678AC9); 
-   border: none;
-   color:white;
   }
   
 .span_text{
